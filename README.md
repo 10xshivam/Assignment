@@ -2,7 +2,6 @@
 
 A modern, responsive music player UI built with React and TypeScript, featuring a Spotify-like interface with dark theme and smooth animations.
 
-![Music Player UI Screenshot](./src/assets/app-screenshot.png)
 
 ## Features
 
