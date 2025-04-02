@@ -18,7 +18,7 @@ interface Song {
 function App() {
   // States
   const [songs, setSongs] = useState<Song[]>(musicData);
-  const [allSongs, setAllSongs] = useState<Song[]>(musicData);
+  const [allSongs, _setAllSongs] = useState<Song[]>(musicData);
   const [currentSongIndex, setCurrentSongIndex] = useState<number>(0);
   const [currentSongId, setCurrentSongId] = useState<number>(musicData[0].id);
   const [currentTime, setCurrentTime] = useState<number>(0);
@@ -31,7 +31,7 @@ function App() {
   const [showMenu, setShowMenu] = useState<boolean>(true);
   const [showSongList, setShowSongList] = useState<boolean>(false); // For mobile view
   const [gradientColor, setGradientColor] = useState<string>('rgba(25, 25, 40, 0.8)');
-  const [volume, setVolume] = useState<number>(0.7);
+  const [volume, _setVolume] = useState<number>(0.7);
   const [isMuted, setIsMuted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
